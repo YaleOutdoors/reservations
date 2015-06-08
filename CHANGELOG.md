@@ -4,26 +4,26 @@
 
 ## v5.3.0 - 2015-05-11
 ### Fixed
-* Fixed visibility issue with autocomplete selection ([#1251](https://github.com/YaleSTC/reservations/issues/1251)).
 * Fixed issues with reservation renewals and added tests ([#416](https://github.com/YaleSTC/reservations/issues/416), [#1218](https://github.com/YaleSTC/reservations/issues/1218)).
 * Reservation scopes refactored ([#462](https://github.com/YaleSTC/reservations/issues/462)).
 * Equipment Items and other deactivate-able resources can now be destroyed using Rails Admin ([#1062](https://github.com/YaleSTC/reservations/issues/1062)).
 * Fixed broken calendar logic ([#1218](https://github.com/YaleSTC/reservations/issues/1218)).
 * Forgetting to check off the ToS checkbox during checkout no longer causes checkout to fail silently ([#1227](https://github.com/YaleSTC/reservations/issues/1227)).
 * ToS acceptance is no longer saved if checkout doesn't succeed ([#1227](https://github.com/YaleSTC/reservations/issues/1227)).
+* Fixed visibility issue with autocomplete selection ([#1251](https://github.com/YaleSTC/reservations/issues/1251)).
 * The Reservation#approved? method now correctly returns false for open requests ([#1267](https://github.com/YaleSTC/reservations/issues/1267)).
 
 ### Added
-* Added the ability to view returned overdue reservations from the reservations index page along with their late fees ([#1121](https://github.com/YaleSTC/reservations/issues/1121)).
 * Added integration tests for basic reservation actions and Rails Admin routes ([#416](https://github.com/YaleSTC/reservations/issues/416)).
 * Added Reservation flags for various attributes ([see wiki](https://github.com/YaleSTC/reservations/wiki/Reservation-Flags), [#462](https://github.com/YaleSTC/reservations/issues/462)).
 * Added quantity fields to cart items ([#1114](https://github.com/YaleSTC/reservations/issues/1114)).
+* Added the ability to view returned overdue reservations from the reservations index page along with their late fees ([#1121](https://github.com/YaleSTC/reservations/issues/1121)).
 * Checkout receipts are now sent automatically on checkout ([#1215](https://github.com/YaleSTC/reservations/issues/1215)).
 
 ### Changed
-* Equipment item notes can now only be viewed by admin roles and higher ([#1245](https://github.com/YaleSTC/reservations/issues/1245)).
 * Reservation approval status and status method are now consolidated into a status enum ([#462](https://github.com/YaleSTC/reservations/issues/462)).
-* TOS checkbox on checkout/checkin page moved to the left of the notice text for increased salience and UX consistency ([#1259](https://github.consistencom/YaleSTC/reservations/issues/1259))
+* Equipment item notes can now only be viewed by admin roles and higher ([#1245](https://github.com/YaleSTC/reservations/issues/1245)).
+* TOS checkbox on checkout/checkin page moved to the left of the notice text for increased salience and UX consistency ([#1259](https://github.consistencom/YaleSTC/reservations/issues/1259)).
 
 ## v5.2.2 - 2015-04-20
 ### Fixed
