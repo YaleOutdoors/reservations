@@ -10,7 +10,9 @@
 * Fixed broken calendar logic ([#1218](https://github.com/YaleSTC/reservations/issues/1218)).
 * Forgetting to check off the ToS checkbox during checkout no longer causes checkout to fail silently ([#1227](https://github.com/YaleSTC/reservations/issues/1227)).
 * ToS acceptance is no longer saved if checkout doesn't succeed ([#1227](https://github.com/YaleSTC/reservations/issues/1227)).
+* Admin users and superusers can no longer ban themselves ([#1241](https://github.com/YaleSTC/reservations/issues/1241)).
 * Fixed visibility issue with autocomplete selection ([#1251](https://github.com/YaleSTC/reservations/issues/1251)).
+* Archiving a reservation with a missing reserver no longer fails ([#1253](https://github.com/YaleSTC/reservations/issues/1253)).
 * The Reservation#approved? method now correctly returns false for open requests ([#1267](https://github.com/YaleSTC/reservations/issues/1267)).
 
 ### Added
