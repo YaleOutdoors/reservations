@@ -26,6 +26,7 @@
 * Reservation approval status and status method are now consolidated into a status enum ([#462](https://github.com/YaleSTC/reservations/issues/462)).
 * Equipment item notes can now only be viewed by admin roles and higher ([#1245](https://github.com/YaleSTC/reservations/issues/1245)).
 * TOS checkbox on checkout/checkin page moved to the left of the notice text for increased salience and UX consistency ([#1259](https://github.consistencom/YaleSTC/reservations/issues/1259)).
+* The Reservation status / flagging tasks have been removed from the `flag_reservations` namespace and put in separate files ([#1273](https://github.com/YaleSTC/reservations/issues/1273)).
 
 ## v5.2.2 - 2015-04-20
 ### Fixed
