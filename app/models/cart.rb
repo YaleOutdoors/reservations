@@ -97,7 +97,13 @@ class Cart # rubocop:disable ClassLength
       end
       r.notes = notes
       r.save!
-      AdminMailer.request_filed(r).deliver if request
+
+      # send e-mails
+      if request
+        AdminMailer.request_filed(r).deliver
+      elsif AppConfig.get(:notify_admin_on_create)
+        AdminMailer.reservation_created_admin(r).deliver
+      end
     end
 
     purge_all
