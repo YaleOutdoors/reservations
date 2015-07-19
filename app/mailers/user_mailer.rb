@@ -16,6 +16,7 @@ class UserMailer < ActionMailer::Base
                     'returned overdue', 'starts today']
 
   def reservation_status_update(reservation, force = '') # rubocop:disable all
+    return if AppConfig.get(:disable_user_emails)
     set_app_config
     @reservation = reservation
 
