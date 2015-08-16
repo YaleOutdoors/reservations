@@ -1,4 +1,7 @@
+require 'active_support/concern'
+
 module ReservationValidations
+  extend ActiveSupport::Concern
   ## Validations ##
 
   # Catch-all validation methods #
