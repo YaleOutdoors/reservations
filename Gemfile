@@ -9,7 +9,7 @@ gem 'rake', '~> 10.4.2'
 gem 'rdoc', '~> 4.2.0'
 
 # only for heroku, we should make a heroku group
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 # simulate environment variables
 gem 'dotenv-rails', '~> 2.0.2'
@@ -29,7 +29,7 @@ gem 'rails_admin', '~> 0.6.6'
 gem 'net-ldap', '~> 0.11'
 
 # attachments
-gem 'paperclip', '~> 4.2.1'
+gem 'paperclip'
 
 # soft deletion
 gem 'permanent_records', '~> 3.2.0'
